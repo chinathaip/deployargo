@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: pun-api
-        image: ghcr.io/chinathaip/testargocd:a032cd5781d0c1587d3ee0a877aa951218461624
+        image: ghcr.io/chinathaip/testargocd:b84f926dac06c663c92936b40983fda563fb93a8
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
