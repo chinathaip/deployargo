@@ -5,10 +5,12 @@ metadata:
   namespace: khing
 spec:
   ports:
-  - port: 3000
+  - name: price-fetch
+    port: 3000
     targetPort: 3000
     protocol: TCP
-  - port: 3001
+  - name: catfact
+    port: 3001
     targetPort: 3001
     protocol: TCP
   selector:
