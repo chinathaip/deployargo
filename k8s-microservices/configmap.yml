@@ -5,3 +5,4 @@ metadata:
   namespace: khing
 data:
   api.service.port: "3000"
+  api.service.portyo: "3001"
