@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: phpapp
-        image: ghcr.io/chinathaip/price-fetcher:c3490e4c645d02a336a8c71bbb6d848d08dcb481
+        image: ghcr.io/chinathaip/price-fetcher:a8460cd39bd7b9c9a6676a206114f4379a435bba
         imagePullPolicy: Always
         ports:
         - containerPort: 3000
