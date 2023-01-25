@@ -14,6 +14,12 @@ spec:
         app: api
     spec:
       containers:
+      - name: phpapp
+        image: ghcr.io/chinathaip/ite220-cms:b38ec1d48018bb282830b91bf6c81d76e50f3fe4
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+
       - name: pricefetch
         image: ghcr.io/chinathaip/price-fetcher:a8460cd39bd7b9c9a6676a206114f4379a435bba
         imagePullPolicy: Always
