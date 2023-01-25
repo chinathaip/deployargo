@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api
+  namespace: khing
+spec:
+  selector:
+    matchLabels:
+      app: api
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: api
+    spec:
+      containers:
+      - name: phpapp
+        image: ghcr.io/chinathaip/price-fetcher:c3490e4c645d02a336a8c71bbb6d848d08dcb481
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 3000
+        env:
+        - name: PORT
+          valueFrom:
+            configMapKeyRef:
+              name: app-config
+              key: api.service.port
