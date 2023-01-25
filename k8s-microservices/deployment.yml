@@ -27,7 +27,7 @@ spec:
               key: api.service.port
 
       - name: catfact
-        image: ghcr.io/chinathaip/catfact:c3490e4c645d02a336a8c71bbb6d848d08dcb481
+        image: ghcr.io/chinathaip/catfact:ce11ab641700c60a568ae1c7a2cc8dd76b07473c
         imagePullPolicy: Always
         ports:
         - containerPort: 3001
