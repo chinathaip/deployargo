@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: phpapp
-        image: ghcr.io/chinathaip/ite220-cms:cd2a0f962b73e936bfbc808b169aade15b965a5b
+        image: ghcr.io/chinathaip/ite220-cms:6c47e31b099ba869ec2ff272ab0b59dd4d3eb454
         imagePullPolicy: Always
         ports:
         - containerPort: 80
